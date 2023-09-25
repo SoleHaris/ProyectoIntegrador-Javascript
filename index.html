@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>INTEGRADOR JS</title>
+        <!-- AGREGAMOS PSEUDOELEMENTOS.CSS -->
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <link rel="stylesheet" href="./assets/mediaqueries.css" />
+        <link rel="stylesheet" href="./assets/animaciones.css" />
+        <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+
+    <body>
+        <header>
+            <img src="/assets/img/Logo Cuenta Cuentos.png" alt="Logo Cuenta Cuentos" class="logo" />
+
+            <div class="menu-label">
+            <img src="/assets/img/bars-solid.svg" alt="" class="menu-icon" />
+            </div>
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a class="navbar-link"href="#hero">Inicio</a></li>
+                    <li><a class="navbar-link"href="#products">Productos</a></li>
+                    <li><a class="navbar-link"href="#icons">Servicios</a></li>
+                    <li><a class="navbar-link"href="#contacto">Contacto</a></li>
+                    
+                    <li><a href="./assets/login.html" class="navbar-link" target="_blank">Iniciar sesión</a></li>
+                    <li><a href="./assets/registro.html"  class="navbar-link" target="_blank">Registrarse</a></li>
+                </ul>
+            </nav>
+                
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+
+            <div class="cart">
+                <h2>Tus Cuentos</h2>
+
+                <div class="cart-container"></div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">$0</span>
+                </div>
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-delete">Vaciar</button>
+            </div>
+
+            <div class="overlay"></div>
+            
+        </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Un libro es la puerta abierta a un nuevo mundo</h1>
+                <p>La lectura posibilita en los niños el fomento de la creatividad, la imaginación, la curiosidad y la atención. 
+                Por todo esto dejamos a continuación algunos consejos útiles para que inicies a tus niños en la lectura.
+                </p>
+            </div>
+            <!--hero img-->
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/buscar_lecturas_que_nos_interesen-1-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/elegir_libros_que_mas_nos_llamen_la_atención-2-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/disfrutar_de_nuestra_colección-3-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/permitirse_emocionarse-4-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+                
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/olvidarse_del_tiempo_leyendo-5-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+            
+            <div class="hero-img">
+                <img src="/assets/img/hero-img/armar_una_biblioteca-6-removebg-preview.png" alt="leer puede significar grandes aventuras">
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products">
+            <h2>Nuestros Cuentos</h2>
+            <p>Leer es muy importante para formarse y aprender algo nuevo cada día, 
+            <br>y ¿qué mejor manera de adquirir esta costumbre que leyendo desde pequeños?
+            <br>    
+            Te presentamos nuestra colección de cuentos.
+            <br>
+            Selecciona el que más te guste. 
+            <br>
+            Podés buscarlos por edad.</p>
+            <!-- categories -->
+            <div class="categories">
+                <div class="categories-1">
+                    <div class="categories-img"> 
+                        <img src="/assets/img/libros de colores.png" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>Todos</h3>
+                        <br>
+                        <button class="category active">Ver</button>
+                    </div>
+                </div>
+                <div class="categories-1">
+                    <div class="categories-img"> 
+                        <img src="/assets/img/libro rojo 0-2 años.png" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>0-2 años</h3>
+                        <button class="category" data-category="0-2">Ver</button>
+                    </div>
+                </div>
+                <div class="categories-1">
+                    <div class="categories-img"> 
+                        <img src="/assets/img/libro azul 3-5 años.png" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>3-5 años</h3>
+                        <button class="category" data-category="3-5">Ver</button>
+                    </div>
+                </div>
+                <div class="categories-1">
+                    <div class="categories-img"> 
+                        <img src="/assets/img/libro amarillo  6-8 años.png" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>6-8 años</h3>
+                        <button class="category" data-category="6-8">Ver</button>
+                    </div>
+                </div>
+                <div class="categories-1">
+                    <div class="categories-img"> 
+                        <img src="/assets/img/libro verde +9.png" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>+ 9 años</h3>
+                        <button class="category" data-category="+9">Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- products -->
+            <div class="products-container"></div>
+
+            <!--<div class="product-content">
+                <div class="product">
+                    <img src="/assets/img/cuentos de 0-2 años/El monstruo de colores.jpg" alt="El mosntruo de colores">
+                    <div class="product-txt">
+                        <h3>ahghad</h3>
+                        <p>kjashfdashd</p>
+                        <p class="precio">$200</p>
+                        <a href="" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                        <div class="btn">
+                            <button><a href="#">Agregar al carrito</a></button>
+                        </div>    
+                    </div>
+                </div>
+            </div>-->
+
+            <button class="btn-load"><strong>Ver Más</strong></button>
+
+        </section>
+
+                <!-- SERVICIOS -->
+                <section id="icons">
+                    <div class="icons-info">
+                        <h2>Nuestros servicios</h2>
+                        <div class="icon-card">
+                            <div class="icon-1">
+                                <div class="icon-img">  
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                                <div class="icon-txt">
+                                    <h3>ENVÍOS</h3>
+                                    <p>Entregas a todo el país.</p>
+                                </div>
+                            </div>
+                            <div class="icon-1">
+                                <div class="icon-img">  
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </div>
+                                <div class="icon-txt">
+                                    <h3>PAGÁ COMO QUIERAS</h3>
+                                    <p>Tarjetas de crédito, débito y transferencia.</p>
+                                </div>
+                            </div>
+                            <div class="icon-1">
+                                <div class="icon-img">  
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <div class="icon-txt">
+                                    <h3>COMPRÁ CON SEGURIDAD</h3>
+                                    <p>Tus datos siempre protegidos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!--CONTACTO-->
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <div class="contacto-info-container">
+                <div class="contacto-info">
+                    <p>Escribinos y nos pondremos en contacto contigo a la brevedad</p>
+                    <br>
+                    <form action="">
+                        <label class="texto" for="nombre">Nombre</label><br>
+                        <input type="text" class="informacion" id="nombre" placeholder="Escribí tu nombre" required="Campo obligatorio"><br>
+
+                        <label class="texto" for="email">Email</label><br>
+                        <input type="email" class="informacion" id="email" placeholder="Escribí tu Email"><br>
+
+                        <label class="texto" for="teléfono">Teléfono</label><br>
+                        <input type="tel" class="informacion" id="teléfono" placeholder="Escribí tu teléfono" required="Campo obligatorio"><br>
+
+                        <label class="texto" id="mensaje" for="">Mensaje</label><br>
+
+                        <textarea name="" id="mensaje" class="informacion" cols="25" rows="10" placeholder="Escribí tu comentario..." required="Campo obligatorio"></textarea><br>
+
+                        <input class="boton" type="submit" value="ENVIAR"><br/>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>CATEGORÍAS</h3>
+                <ul>
+                    <li><a href="#">Cómo comprar</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#icons">Servicios</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>SEGUINOS</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li class="contacto-info-li">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i> Pinterest</li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-solid fa-phone"></i> 351-5639241</li>
+                    <li><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cuentacuentos@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Chacabuco 1184, Córdoba.</li>
+                </ul>
+            </div>
+        </div>
+        <p>Cuenta Cuentos &copy 2023</p>
+    </footer>
+
+
+        <div class="add-modal"></div>
+        <script src="./assets/data.js"></script>
+        <script src="./assets/index.js"></script>
+    </body>
+</html>

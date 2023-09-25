@@ -1,0 +1,169 @@
+@media screen and (min-width: 320px) and (max-width: 992px) {
+    /*header*/
+    .logo {
+        height: 35px;
+    }    
+
+    .cart-icon {
+        border: 0px solid;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 55px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: #F5F5F5;
+        border: 2px;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    /* Mostramos el icono del menu */
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 20px;
+        width: 25px;
+    }
+
+    .open-menu {
+        display: flex;
+    }
+
+    /*footer*/
+    .footer-content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    #contacto {
+        padding: 15px;
+    }
+
+    .contacto-info-container {
+        padding: 3px;
+    }
+    .icon-1 {
+        width: 275px;
+        height: 215px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        gap: 6px;
+        align-items:start
+    }    
+
+    .cart {
+        min-width: 285px;
+    }
+
+}
+
+
+/* LOGIN Y REGISTRO */
+@media (max-width:425px) {
+    .form-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+/*@media (max-width: 992px) {
+    /*header
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        border: 0px solid;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: #F5F5F5;
+        border: 2px solid #DCDCDC;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    /* Mostramos el icono del menu 
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 20px;
+        width: 25px;
+    }
+
+    .open-menu {
+        display: flex;
+    }
+
+
+
+    .hero-img {
+        display: none;
+    }
+
+    
+}*/
+    /*Se van a superponer el cart y el menu si se abren juntos, eso lo solucionaremos en el modulo de js*/
+
+
+
+/*@media (max-width: 320px) {
+
+    .footer-content {
+        display: none;
+        gap: 25px;
+    }    
+
+    .footer .link a {
+        font-size: 10px;
+    }
+}*/
+
+
+
+/*@media (max-width: 630px) {
+
+    .footer .link a {
+        font-size: 10px;
+    }
+}*/
