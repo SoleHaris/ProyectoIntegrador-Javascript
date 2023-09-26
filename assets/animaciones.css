@@ -54,10 +54,6 @@ basicamente, el concepto principal de esta tendencia es poner un fonco semitrans
     transform: scaleX(1);
 }
 
-/*.navbar-list .button:hover {
-    color: var(--text-nav);
-    font-weight: 900;
-}*/
 
 /*Toggle para el overlay (para que funcione únicamente cuando abrimos el carrito o el menú hamburguesa.
 Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código)*/
@@ -148,4 +144,3 @@ Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los 
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
-/**/

@@ -75,7 +75,7 @@ body {
 
 .form-input:focus + .form-label, 
 .form-input:not(:placeholder-shown) + .form-label {   
-    transform: translateY(-12px) scale(.7);
+    transform: translateY(-17px) scale(.7);
     transform-origin: left top;
     color: #3866f2;
 }
@@ -124,17 +124,20 @@ body {
     transform: scale(1);
 }
 
-.warning {
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: #4d4646;
-    padding-top: 20px;
+/* ERROR Y SUCCESS */
+.form-group.error input {
+    border: 1px solid #dc3545;
 }
 
-/*@media (max-width:425px) {
-    .form-title {
-        font-size: 1.8rem;
-    }
-}*/
+.form-group small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    display: none;
+}
+
+.form-group.success input {
+    border: 1px solid #3866f2;
+}
+
 

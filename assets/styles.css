@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-/*VARIABLES DE COLORES*/
-/*:root {
-    /* bg colors */
-    /*--background: #f2f2f2;
-    --bg-primary: #6C733D;
-    --bg-secondary: #9DA65D;
-    --btn-bg: #202426;
-    --bg-grey: #8c8c88;
-    --nav-bg: #202426;
-
-    /* Text colors */
-    /*--text-nav: #6C733D;
-    --text-white: #f2f2f2;
-    --text-black: #202426;
-}*/
-
 * {
     margin: 0;
     padding: 0;
@@ -286,12 +269,6 @@ header {
     
 }
 
-/*.hero-info {
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-}*/
-
 #hero h1 {
     display: flex;
     flex-direction: column;
@@ -319,8 +296,6 @@ header {
 .hero-img img {
     width: 130px;
 }
-
-
 
 /*PRODUCTOS*/
 #products {

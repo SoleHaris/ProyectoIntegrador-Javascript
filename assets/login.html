@@ -5,45 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8d921a3aa9.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <title>Iniciar Sesión</title>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/mediaqueries.css">
-    <link rel="stylesheet" href="/assets/animations.css">
-    <link rel="stylesheet" href="/assets/registro.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
 
-    <form class="form" id="form">
+    <form class="form">
         <h2 class="form-title"> Iniciar Sesión</h2>
         <p class="form-paragraph">¿Aún no tenés una cuenta? <a href="/assets/registro.html" class="form-link">Entra aquí</a></p>
 
-        <div class="form-container">
+        <div class="form-container" id="login-form" novalidate>
             <div class="form-group">    
-                <input type="text" id="name" class="form-input" placeholder=" ">
-                <label for="name" class="form-label">Nombre</label>
-                <span class="form-line"></span>
-            </div>
-
-            <div class="form-group">    
-                <input type="email" id="email" class="form-input" placeholder=" ">
+                <input type="email" id="email" class="form-input" placeholder=" " autocomplete="off">
                 <label for="email" class="form-label">Email</label>
                 <span class="form-line"></span>
             </div>
 
             <div class="form-group">    
-                <input type="password" id="password" class="form-input" placeholder=" ">
+                <input type="password" id="password" class="form-input" placeholder=" " autocomplete="off">
                 <label for="password" class="form-label">Contraseña</label>
                 <span class="form-line"></span>
             </div>
-
             
+            <small id="form__error"></small>
+
             <input type="submit" class="form-submit" value="Entrar">
 
 
             <h4><a href="/index.html" class="form-link">Volver al inicio</a></h4>
         </div>
     </form>
-    <div id="error"></div>
+    
 
     
     <script src="./login.js"></script>
